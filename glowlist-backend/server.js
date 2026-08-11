@@ -5,9 +5,12 @@ const PORT = 3001;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Selamat Datang di Glowlist 🔥🔥');
+    res.send('Selamat Datang di Glowlist API sudah berjalan');
+});
+app.get("/coba", (req, res) => {
+    res.send('Selamat Datang di Glowlist coba sudah berjalan ');
 });
 
 app.listen(PORT, () => {
     console.log(`Server Glowlist jalan di http://localhost:${PORT}`);
-});
+}); 
